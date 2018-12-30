@@ -1,0 +1,32 @@
+{
+    "name": "Pithy QR Code",
+    "description": "Simple qr code generation tool",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "./images/qrcode.png"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "tabs",
+        "downloads",
+        "notifications",
+        "storage"
+    ],
+    "icons": {
+        "16": "./images/qrcode16.png",
+        "32": "./images/qrcode32.png",
+        "48": "./images/qrcode48.png",
+        "128": "./images/qrcode128.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Q",
+                "mac": "MacCtrl+Shift+Q"
+            },
+            "description": "Opens index.html"
+        }
+    }
+}
